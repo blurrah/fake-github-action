@@ -13,7 +13,7 @@ async function run(): Promise<void> {
     const secret = core.getInput("aws_secret_access_key");
 
     const readFilePromise = promisify(readFile);
-    const contents = await readFilePromise("main.yml", "utf-8");
+    const contents = await readFilePromise("./main.yml", "utf-8");
 
     const doc = yaml.load(contents);
 
