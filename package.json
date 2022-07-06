@@ -1,0 +1,20 @@
+{
+  "name": "fake-github-action",
+  "version": "1.0.0",
+  "description": "Do not use this! Just an example of how easy you can extract github secrets from a shared unvetted Github Action",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build index.ts"
+  },
+  "author": "Boris Besemer",
+  "dependencies": {
+    "@actions/core": "1.9.0",
+    "cross-fetch": "3.1.5"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "0.34.0",
+    "typescript": "4.7.4"
+  },
+  "license": "ISC"
+}
